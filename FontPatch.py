@@ -37,13 +37,13 @@ elif "roblox" in client.lower():
 os.system("cls")
 print("Patching fonts...\n")
 
-# If renamed Gotham fonts are present in the "Patch" folder, use this code!
-# Also use this if Roblox removes their old fonts (but they probably won't!)
+# If renamed Gotham fonts are present in the "Patch" folder, uncomment this code!
 #os.system(f"copy .\\Patch\\BuilderSans-Regular.otf {versionPath} /Y >NUL 2>&1")
 #os.system(f"copy .\\Patch\\BuilderSans-Medium.otf {versionPath} /Y >NUL 2>&1")
 #os.system(f"copy .\\Patch\\BuilderSans-Bold.otf {versionPath} /Y >NUL 2>&1")
 #os.system(f"copy .\\Patch\\BuilderSans-ExtraBold.otf {versionPath} /Y >NUL 2>&1")
 #input("Done patching fonts! ")
+#exit()
 
 os.system(f"copy {versionPath}\\{old[0]} {versionPath}\\{new[0]} /Y >NUL 2>&1")
 print("Copied font 1/4")
